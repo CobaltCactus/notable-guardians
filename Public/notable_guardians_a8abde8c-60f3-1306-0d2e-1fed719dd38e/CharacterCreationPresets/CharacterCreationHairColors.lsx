@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="CharacterCreationHairColors">
+        <node id="root">
+            <children>
+                <node id="CharacterCreationHairColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3d29e11cgb024g96c2ga8a2g74908cfb5da6" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="72f56d86-89a0-d8e3-b3ba-c35c2cee61bc"/>
+                    <attribute id="Name" type="FixedString" value="HAIR_Color_BlackNeutral"/>
+                    <attribute id="UIColor" type="LSString" value="#FF18181F"/>
+                    <attribute id="UUID" type="guid" value="0206c920-e750-4dfb-9760-8376a31b231d"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
