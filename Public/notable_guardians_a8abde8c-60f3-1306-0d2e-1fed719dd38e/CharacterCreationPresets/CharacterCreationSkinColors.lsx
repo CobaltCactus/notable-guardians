@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="CharacterCreationSkinColors">
+        <node id="root">
+            <children>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="had6712e2gae59ga59dg1672g459353f01671" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="7203a236-859a-2f48-cdbf-ef73a7b2c0bf"/>
+                    <attribute id="Name" type="FixedString" value="Philomeen"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FF555555"/>
+                    <attribute id="UUID" type="guid" value="fe5cca58-90df-49ea-aa57-7a812e59aaf3"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

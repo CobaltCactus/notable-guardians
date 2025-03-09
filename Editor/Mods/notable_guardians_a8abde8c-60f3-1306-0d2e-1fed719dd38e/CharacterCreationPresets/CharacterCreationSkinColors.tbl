@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="6af7c7da-7f7c-4bf2-a517-73b98f894305">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fe5cca58-90df-49ea-aa57-7a812e59aaf3" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Philomeen" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had6712e2gae59ga59dg1672g459353f01671" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="7203a236-859a-2f48-cdbf-ef73a7b2c0bf" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FF555555" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

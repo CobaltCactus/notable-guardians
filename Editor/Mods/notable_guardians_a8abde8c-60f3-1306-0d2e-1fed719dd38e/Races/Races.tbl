@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3b69d463-991a-40f2-b31e-e0c167865610">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_70" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0c6f801e-74fc-492a-ab25-3ca9604156b4" />
+        <field name="ParentUUID" type="GuidTableFieldDefinition" value="f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d" />
+        <field name="RaceName" type="FixedStringTableFieldDefinition" value="Gnome_Forest" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3ec29868ga850g6db3g15a2gbcb296b76677" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b7e68e9gf5f2g1196g0612g2687bf007ac2" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="09518377-4ea1-4ce2-b8e8-61477c26ebdd" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="f0a6b572-9612-403f-981c-978c21225845" />
+        <field name="RaceSoundSwitch" type="FixedStringTableFieldDefinition" value="Gnome" />
+        <field name="DisplayTypeUUID" type="GuidTableFieldDefinition" value="899d275e-9893-490a-9cd5-be856794929f" />
+        <field name="SkinColors" type="GuidObjectListTableFieldDefinition" value="fe5cca58-90df-49ea-aa57-7a812e59aaf3" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
