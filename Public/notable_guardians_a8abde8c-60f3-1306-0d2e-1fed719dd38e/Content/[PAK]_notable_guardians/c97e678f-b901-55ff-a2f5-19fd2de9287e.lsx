@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="VisualBank">
+		<node id="VisualBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="c97e678f-b901-55ff-a2f5-19fd2de9287e" />
+					<attribute id="Name" type="LSString" value="HUM_F_ARM_Nightsong_A_Footwear_OLD_000" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/notable_guardians_a8abde8c-60f3-1306-0d2e-1fed719dd38e/Assets/Characters/_Models/Humans/_Female/Resources/HUM_F_ARM_Nightsong_A_Footwear.GR2" />
+					<attribute id="Slot" type="FixedString" value="Footwear" />
+					<attribute id="RemapperSlotId" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/notable_guardians_a8abde8c-60f3-1306-0d2e-1fed719dd38e/Assets/Characters/_Models/Humans/_Female/Resources/HUM_F_ARM_Nightsong_A_Footwear.Dummy_Root.0" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="MaterialType" type="uint8" value="18" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.15514979 0.099612 -0.014213999" />
+					<attribute id="BoundsMax" type="fvec3" value="0.15514979 0.458098 0.114537865" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<children>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="HUM_F_ARM_Nightsong_A_Footwear.HUM_F_ARM_Nightsong_A_Footwear_Mesh.0" />
+							<attribute id="MaterialID" type="FixedString" value="70319cb1-bdb1-2788-30ef-1112e57272f0" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node>
+						<node id="ClothProxyMapping" />
+						<node id="Base" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
