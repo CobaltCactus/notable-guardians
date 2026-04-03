@@ -49,6 +49,9 @@ PYCODE
   fi
 }
 
+# Root where zip files will be placed (current directory). Change if you want a specific root folder.
+ZIP_ROOT="."
+
 for modname in "${MOD_SUBDIRS[@]}"; do
   found_any=false
 
@@ -72,13 +75,17 @@ for modname in "${MOD_SUBDIRS[@]}"; do
     mkdir -p "$target_dir"
     rm -rf "$target_dir/"*
 
-    # Create a compact zip name (replace slashes with underscores)
+    # Create a compact zip name (replace slashes with underscores).
+    # Put the zip at the repo root (ZIP_ROOT). Use a name that reflects original location to avoid collisions.
     safe_sub="${subdir//\//_}"
     zipname="${safe_sub}_${modname}.zip"
-    zippath="$target_dir/$zipname"
+    zippath="$ZIP_ROOT/$zipname"
 
     echo "Zipping $src_dir -> $zippath"
     zip_dir "$src_dir" "$zippath"
+
+    # If you still need a copy of the zip inside the target_dir, uncomment the next line:
+    # cp "$zippath" "$target_dir/"
   done
 
   if [ "$found_any" = false ]; then
