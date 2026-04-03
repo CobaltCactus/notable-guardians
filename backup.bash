@@ -27,7 +27,8 @@ SUBDIR_LIST=(
 set -e
 
 MOD_SUBDIRS=(
-  "LMS_Option_1_a5aa97a9-4359-bbc1-6a3f-7b4beb433fe9"
+  "notable_guardians_a8abde8c-60f3-1306-0d2e-1fed719dd38e"
+  "notable_guardians_2_f4732d93-9bd1-07ea-701a-0b159587eb84"
   # add more names as needed
 )
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="0f39315b-d8f6-4fb3-a6e0-6dbfe7fb3f2e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a6bbf702-9ecc-47fa-9854-5489c47839d9" />
+        <field name="SlotName" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="CharacterCreatorSlotNames" version="1" />
+        <field name="VisualResource" type="GuidTableFieldDefinition" value="465ffa33-d4c2-44b2-8803-adcc8d8566b5" />
+        <field name="BoneName" type="EnumerationTableFieldDefinition" value="piercing_lobe_a_r" enumeration_type_name="CharacterCreatorBoneNames" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hace0f651gb965g6b7fga6ccg456ac272d4bb" version="4" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="PRC_Mystra_R" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ca8240df-ad3f-4d6b-9b3a-64c09fe71c99" />
+        <field name="SlotName" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="CharacterCreatorSlotNames" version="1" />
+        <field name="VisualResource" type="GuidTableFieldDefinition" value="4cbcd32c-637b-f1c9-e370-fd30d95a19ac" />
+        <field name="BoneName" type="EnumerationTableFieldDefinition" value="piercing_lobe_a_l" enumeration_type_name="CharacterCreatorBoneNames" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a4b942eg34cbgef23ge5e0gc9848cc17f6f" version="2" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="PRC_Mystra_L" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

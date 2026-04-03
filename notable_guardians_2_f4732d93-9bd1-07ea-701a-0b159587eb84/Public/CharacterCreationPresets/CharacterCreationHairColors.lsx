@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="CharacterCreationHairColors">
+        <node id="root">
+            <children>
+                <node id="CharacterCreationHairColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h75755a96g7b5eg2912g9676gf3adad8867a0" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="22a39d69-cb64-30aa-be2c-533020b56444"/>
+                    <attribute id="Name" type="FixedString" value="Hair_Color_Raphael"/>
+                    <attribute id="UIColor" type="LSString" value="#FF150F0C"/>
+                    <attribute id="UUID" type="guid" value="378f41db-4e56-42da-8aab-24a073ebfb51"/>
+                </node>
+                <node id="CharacterCreationHairColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h79e592a7gbf74g8116g029fg7cf29735e029" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="be9b0a2e-5c8c-cf8a-fe28-c4405f8237c7"/>
+                    <attribute id="Name" type="FixedString" value="Hair_Color_Mystra"/>
+                    <attribute id="UIColor" type="LSString" value="#FF000000"/>
+                    <attribute id="UUID" type="guid" value="4fc670a8-12f8-45ea-8bef-1f7c90d60568"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
