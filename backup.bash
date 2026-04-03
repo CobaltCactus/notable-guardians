@@ -1,7 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-# TODO: set mod folder(s) here
 MOD_SUBDIRS=(
   "notable_guardians_a8abde8c-60f3-1306-0d2e-1fed719dd38e"
   "notable_guardians_2_f4732d93-9bd1-07ea-701a-0b159587eb84"
@@ -22,20 +21,16 @@ if [ ${#MOD_SUBDIRS[@]} -eq 0 ]; then
   exit 1
 fi
 
-single_mod=false
-if [ ${#MOD_SUBDIRS[@]} -eq 1 ]; then
-  single_mod=true
-fi
-
-# helper: create zip of a directory using zip or Python fallback
-zip_dir() {
-  local src="$1" dest_zip="$2"
-  rm -f "$dest_zip"
+# helper: create zip of a directory list using zip or Python fallback
+zip_paths() {
+  local dst_zip="$1"; shift
+  rm -f "$dst_zip"
   if command -v zip >/dev/null 2>&1; then
-    (cd "$src" && zip -r -0 "$OLDPWD/$dest_zip" .) >/dev/null
+    # zip from repo root: include each source path with the desired archive name
+    zip -r -0 "$dst_zip" "$@" >/dev/null
   else
-    # Python fallback (works if python is available)
-    python - "$src" "$dest_zip" <<'PYCODE'
+    # Python fallback: expects pairs of (source_dir, archive_prefix) flattened as args
+    python - "$tmpdir" "$zippath" <<'PYCODE'
 import sys, os, zipfile
 src = sys.argv[1]
 dst = sys.argv[2]
@@ -49,49 +44,57 @@ PYCODE
   fi
 }
 
-# Root where zip files will be placed (current directory). Change if you want a specific root folder.
 ZIP_ROOT="."
 
 for modname in "${MOD_SUBDIRS[@]}"; do
   found_any=false
+  # collect args for Python fallback (dst + pairs) or zip include list (prefixing will be handled below)
+  # For zip CLI, we'll create temporary symlinked paths under a temp dir to control archive paths.
+  tmpdir="$(mktemp -d)"
+  cleanup() { rm -rf "$tmpdir"; }
+  trap cleanup RETURN
 
+  # For zip CLI path list: we will copy directory trees into tmpdir under subdir-prefixed folders
   for subdir in "${SUBDIR_LIST[@]}"; do
     src_dir="$BG3_DATA/$subdir/$modname"
     if [ ! -d "$src_dir" ]; then
       continue
     fi
-
     found_any=true
-
-    if [ "$single_mod" = true ]; then
-      target_dir="$subdir/$modname"
-      mkdir -p "$subdir"
-    else
-      target_dir="$modname/$subdir/$modname"
-      mkdir -p "$modname/$subdir"
-    fi
-
-    # Ensure target_dir exists and is empty
-    mkdir -p "$target_dir"
-    rm -rf "$target_dir/"*
-
-    # Create a compact zip name (replace slashes with underscores).
-    # Put the zip at the repo root (ZIP_ROOT). Use a name that reflects original location to avoid collisions.
+    # create a directory inside tmpdir named like <safe_sub>/<original files...>
     safe_sub="${subdir//\//_}"
-    zipname="${safe_sub}_${modname}.zip"
-    zippath="$ZIP_ROOT/$zipname"
-
-    echo "Zipping $src_dir -> $zippath"
-    zip_dir "$src_dir" "$zippath"
-
-    # If you still need a copy of the zip inside the target_dir, uncomment the next line:
-    # cp "$zippath" "$target_dir/"
+    dest_under_tmp="$tmpdir/$safe_sub"
+    mkdir -p "$dest_under_tmp"
+    # Copy contents (preserve tree inside safe_sub)
+    cp -a "$src_dir/." "$dest_under_tmp/" || true
   done
 
   if [ "$found_any" = false ]; then
     echo "Warning: mod '$modname' not found in any SUBDIR_LIST locations."
-    rmdir --ignore-fail-on-non-empty "$modname" 2>/dev/null || true
+    continue
   fi
+
+  zipname="${modname}.zip"
+  zippath="$ZIP_ROOT/$zipname"
+
+  echo "Creating root zip $zippath for mod $modname"
+  if command -v zip >/dev/null 2>&1; then
+    (cd "$tmpdir" && zip -r -0 "$zippath" .) >/dev/null
+  else
+    # Use Python fallback: we created a tmpdir with desired archive layout already
+    python - "$tmpdir" "$zippath" <<'PYCODE'
+import sys, os, zipfile
+src = sys.argv[1]
+dst = sys.argv[2]
+with zipfile.ZipFile(dst, 'w', compression=zipfile.ZIP_STORED) as zf:
+    for root, dirs, files in os.walk(src):
+        for f in files:
+            full = os.path.join(root, f)
+            arc = os.path.relpath(full, src)
+            zf.write(full, arc)
+PYCODE
+  fi
+
 done
 
 git add --all
