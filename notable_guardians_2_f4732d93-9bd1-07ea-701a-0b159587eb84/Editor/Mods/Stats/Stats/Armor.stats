@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="239de60a-29b5-4010-bf7d-f6169d4ddd8a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb4c2d71-97b1-4f29-b451-577140afdef1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARM_Underwear_Dragonborn_Visible" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ea6fe38d-3881-4956-8977-4f58d9703825" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="c7b9daf1-3515-4816-9b00-31b501667af5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1d3a78c-9be6-48e3-81c1-c5db8b5564aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARM_Underwear_Halflings_Visible" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ea6fe38d-3881-4956-8977-4f58d9703825" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="4f7f9e07-632d-44f0-8165-ed38708fa68e" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c88d75be-a782-4c9f-b776-2da5ebe1e6af" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARM_Underwear_Gnomes_Visible" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ea6fe38d-3881-4956-8977-4f58d9703825" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="960c66d1-3020-4809-ad18-dd8508bc499a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c086b2d8-1b9d-4338-b57f-8a726e8ef339" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARM_Underwear_Tieflings_Visible" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ea6fe38d-3881-4956-8977-4f58d9703825" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="707b9e82-852f-47e8-9cd3-61f4259663c0" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

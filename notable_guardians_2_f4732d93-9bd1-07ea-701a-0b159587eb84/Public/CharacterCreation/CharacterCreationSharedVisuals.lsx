@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="CharacterCreationSharedVisuals">
+        <node id="root">
+            <children>
+                <node id="CharacterCreationSharedVisual">
+                    <attribute id="BoneName" type="FixedString" value="piercing_lobe_a_r"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hace0f651gb965g6b7fga6ccg456ac272d4bb" version="4"/>
+                    <attribute id="SlotName" type="FixedString" value="Piercing"/>
+                    <attribute id="UUID" type="guid" value="a6bbf702-9ecc-47fa-9854-5489c47839d9"/>
+                    <attribute id="VisualResource" type="guid" value="465ffa33-d4c2-44b2-8803-adcc8d8566b5"/>
+                </node>
+                <node id="CharacterCreationSharedVisual">
+                    <attribute id="BoneName" type="FixedString" value="piercing_lobe_a_l"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h2a4b942eg34cbgef23ge5e0gc9848cc17f6f" version="2"/>
+                    <attribute id="SlotName" type="FixedString" value="Piercing"/>
+                    <attribute id="UUID" type="guid" value="ca8240df-ad3f-4d6b-9b3a-64c09fe71c99"/>
+                    <attribute id="VisualResource" type="guid" value="4cbcd32c-637b-f1c9-e370-fd30d95a19ac"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

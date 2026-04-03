@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="6af7c7da-7f7c-4bf2-a517-73b98f894305">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6d09e88c-eed0-46d0-9057-837585092143" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Jaheira" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h18144c22g4c3cg0e1dg4f60g4cb832080c5b" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="f2672590-e1d6-2a1f-e00c-205cd1d6dc03" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFF7DF6E" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="43873c9d-2a41-4d5d-979e-0817882a3b55" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_HUM_Ketheric_New" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h76ce5c56g9d8bgfef2gaaa6ga60f5a7254d8" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="d0df4b1a-b1d4-97cd-f2b1-df78cd48e76f" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFFFE678" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="14681ebf-f996-4ab2-9a40-f437499757c7" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Hag" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a4fba35g88d1gdb12ga860g30762c32cd20" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="bf1990b2-f9e9-dae2-6092-2d00f1c36326" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFEC9B72" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d061df8f-ce29-4aa7-bfc3-4a0325684add" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Cazador" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34c05716ge0e4g4255g1674g1e4d7caeefdf" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="5146bebd-5f19-3aaa-30c4-138bbecd94c2" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFFFE678" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="10f9060a-f04e-4a73-8260-e7fb417183bb" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Gut" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h24760b3bg27a5gbcc8g4b09g0d6182860ed1" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="b89f6b7e-40fc-eb50-9f0a-9050cf953a44" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFFFE678" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ffb30065-52b5-457b-90de-e7ac80ccfe8f" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Dror" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3ad92959g9aa2gc59dg6785g2178a69afdfb" version="2" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="78ff1925-e235-be4c-2e10-1c46ebb79df9" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFC74E59" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0eff4de1-590c-487b-9df0-40374d22e81e" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Isobel" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b64ecc7g4c9agc4a0gccc8g592d23dc9c80" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="faacd7af-014b-1b44-30e5-6dbf2e2c6c40" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFB0979A" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3092b9aa-5d24-4a62-adde-9295281f4bd0" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Fezzerk" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea91449fg9e11gf47fg67cdgb008c107fc83" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="24d1d96c-ccc0-6e90-70e5-93518ac9d18b" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFFFE678" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="33d338cf-a171-42ba-a398-17f2d602a9a6" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Withers" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb81e8a8dg862bg1f80g5aa3gd6e7a815076d" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="6a98cd21-d972-a800-f213-7e187bc646cb" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFB0979A" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3a3c95fb-a698-4fc9-9796-9787bff4fa28" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Nightsong" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc4731d6fgd36ag8665gcb2bgd332892c7be9" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="4c7a7607-6b5e-a923-e037-4e40a48d20ce" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFD8D8D8" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_10" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c344c676-59e9-4a24-91f7-cb36592860c1" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Gortash" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfb5d2f01g7e05g754bgc4fag3a9d5c022b10" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="371ff2e1-8dbb-3378-4df6-b066b6f7597f" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFB0979A" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_11" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cea5c929-f41d-43e2-a210-e8bd402fe1f9" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Minsc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf967f916g37bag6281g22beg1a94dcf0b702" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="07761a0b-4ce5-3121-fd10-9a865a4ad627" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFEC9B72" />
+        <field name="SkinType" type="EnumerationTableFieldDefinition" value="Standard" enumeration_type_name="CharacterCreatorSkinTypes" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_12" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1daf0744-c437-4de1-892d-1084a09bc571" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SKIN_Dark_Urge" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc2873105g6d03g74a4g56f5gf54107f92eef" version="1" />
+        <field name="MaterialPresetUUID" type="GuidTableFieldDefinition" value="9f57f0b3-6f6f-09a2-4c1a-13fe5ba6eb6f" />
+        <field name="UIColor" type="ColorTableFieldDefinition" value="#FFE2E2E2" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

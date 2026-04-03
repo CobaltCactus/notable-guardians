@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="CharacterCreationSkinColors">
+        <node id="root">
+            <children>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h18144c22g4c3cg0e1dg4f60g4cb832080c5b" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="f2672590-e1d6-2a1f-e00c-205cd1d6dc03"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Jaheira"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFF7DF6E"/>
+                    <attribute id="UUID" type="guid" value="6d09e88c-eed0-46d0-9057-837585092143"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h76ce5c56g9d8bgfef2gaaa6ga60f5a7254d8" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="d0df4b1a-b1d4-97cd-f2b1-df78cd48e76f"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_HUM_Ketheric_New"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFFFE678"/>
+                    <attribute id="UUID" type="guid" value="43873c9d-2a41-4d5d-979e-0817882a3b55"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6a4fba35g88d1gdb12ga860g30762c32cd20" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="bf1990b2-f9e9-dae2-6092-2d00f1c36326"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Hag"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFEC9B72"/>
+                    <attribute id="UUID" type="guid" value="14681ebf-f996-4ab2-9a40-f437499757c7"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h34c05716ge0e4g4255g1674g1e4d7caeefdf" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="5146bebd-5f19-3aaa-30c4-138bbecd94c2"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Cazador"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFFFE678"/>
+                    <attribute id="UUID" type="guid" value="d061df8f-ce29-4aa7-bfc3-4a0325684add"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h24760b3bg27a5gbcc8g4b09g0d6182860ed1" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="b89f6b7e-40fc-eb50-9f0a-9050cf953a44"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Gut"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFFFE678"/>
+                    <attribute id="UUID" type="guid" value="10f9060a-f04e-4a73-8260-e7fb417183bb"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3ad92959g9aa2gc59dg6785g2178a69afdfb" version="2"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="78ff1925-e235-be4c-2e10-1c46ebb79df9"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Dror"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFC74E59"/>
+                    <attribute id="UUID" type="guid" value="ffb30065-52b5-457b-90de-e7ac80ccfe8f"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h2b64ecc7g4c9agc4a0gccc8g592d23dc9c80" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="faacd7af-014b-1b44-30e5-6dbf2e2c6c40"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Isobel"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFB0979A"/>
+                    <attribute id="UUID" type="guid" value="0eff4de1-590c-487b-9df0-40374d22e81e"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hea91449fg9e11gf47fg67cdgb008c107fc83" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="24d1d96c-ccc0-6e90-70e5-93518ac9d18b"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Fezzerk"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFFFE678"/>
+                    <attribute id="UUID" type="guid" value="3092b9aa-5d24-4a62-adde-9295281f4bd0"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb81e8a8dg862bg1f80g5aa3gd6e7a815076d" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="6a98cd21-d972-a800-f213-7e187bc646cb"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Withers"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFB0979A"/>
+                    <attribute id="UUID" type="guid" value="33d338cf-a171-42ba-a398-17f2d602a9a6"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc4731d6fgd36ag8665gcb2bgd332892c7be9" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="4c7a7607-6b5e-a923-e037-4e40a48d20ce"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Nightsong"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFD8D8D8"/>
+                    <attribute id="UUID" type="guid" value="3a3c95fb-a698-4fc9-9796-9787bff4fa28"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hfb5d2f01g7e05g754bgc4fag3a9d5c022b10" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="371ff2e1-8dbb-3378-4df6-b066b6f7597f"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Gortash"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFB0979A"/>
+                    <attribute id="UUID" type="guid" value="c344c676-59e9-4a24-91f7-cb36592860c1"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hf967f916g37bag6281g22beg1a94dcf0b702" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="07761a0b-4ce5-3121-fd10-9a865a4ad627"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Minsc"/>
+                    <attribute id="SkinType" type="FixedString" value="Standard"/>
+                    <attribute id="UIColor" type="LSString" value="#FFEC9B72"/>
+                    <attribute id="UUID" type="guid" value="cea5c929-f41d-43e2-a210-e8bd402fe1f9"/>
+                </node>
+                <node id="CharacterCreationSkinColor">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc2873105g6d03g74a4g56f5gf54107f92eef" version="1"/>
+                    <attribute id="MaterialPresetUUID" type="guid" value="9f57f0b3-6f6f-09a2-4c1a-13fe5ba6eb6f"/>
+                    <attribute id="Name" type="FixedString" value="SKIN_Dark_Urge"/>
+                    <attribute id="UIColor" type="LSString" value="#FFE2E2E2"/>
+                    <attribute id="UUID" type="guid" value="1daf0744-c437-4de1-892d-1084a09bc571"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
