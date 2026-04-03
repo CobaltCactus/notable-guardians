@@ -22,6 +22,25 @@ SUBDIR_LIST=(
   "Generated/Public"
 )
 
+#!/bin/bash
+# backup.bash: copy BG3 mod folders; if one mod then repo/<subdir>/..., else repo/<modname>/<subdir>/...
+set -e
+
+MOD_SUBDIRS=(
+  "LMS_Option_1_a5aa97a9-4359-bbc1-6a3f-7b4beb433fe9"
+  # add more names as needed
+)
+
+BG3_DATA="/d/Program Files (x86)/Steam/steamapps/common/Baldurs Gate 3/Data"
+
+SUBDIR_LIST=(
+  "Projects"
+  "Editor/Mods"
+  "Mods"
+  "Public"
+  "Generated/Public"
+)
+
 if [ ${#MOD_SUBDIRS[@]} -eq 0 ]; then
   echo "MOD_SUBDIRS must contain at least one folder name in $(basename "$BASH_SOURCE")"
   exit 1
@@ -42,7 +61,7 @@ for modname in "${MOD_SUBDIRS[@]}"; do
     if [ "$single_mod" = true ]; then
       dest="$subdir"                    # repo/<subdir>/...
     else
-      dest="$modname/$subdir/"           # repo/<modname>/<subdir>/...
+      dest="$modname/$subdir"           # repo/<modname>/<subdir>/...
     fi
 
     if [ -d "$src" ]; then

@@ -1,3 +1,0 @@
-new equipment "EQP_Daisy"
-add initialweaponset "Melee"
-

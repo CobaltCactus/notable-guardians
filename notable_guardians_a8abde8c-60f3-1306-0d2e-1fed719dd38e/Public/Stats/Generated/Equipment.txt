@@ -1,5 +1,0 @@
-new equipment "EQP_Daisy"
-add initialweaponset "Melee"
-add equipmentgroup
-add equipment entry "UNI_DaisyPlaysuit"
-
