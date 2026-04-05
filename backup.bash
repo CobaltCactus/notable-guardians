@@ -1,100 +1,55 @@
 #!/bin/bash
-set -euo pipefail
+# backup.bash: pull all BG3 Mod Project files into a single place for source code management
+# by mstephenson6, see guide at https://mod.io/g/baldursgate3/r/git-backups-for-mod-projects
+set -e
 
-MOD_SUBDIRS=(
-  "notable_guardians_a8abde8c-60f3-1306-0d2e-1fed719dd38e"
-  "notable_guardians_2_f4732d93-9bd1-07ea-701a-0b159587eb84"
+MOD_SUBDIR_NAMES=(
+    "notable_guardians_a8abde8c-60f3-1306-0d2e-1fed719dd38e"
+    "notable_guardians_2_f4732d93-9bd1-07ea-701a-0b159587eb84"
 )
 
 BG3_DATA="/d/Program Files (x86)/Steam/steamapps/common/Baldurs Gate 3/Data"
 
 SUBDIR_LIST=(
-  "Projects"
-  "Editor/Mods"
-  "Mods"
-  "Public"
-  "Generated/Public"
+    "Projects"
+    "Editor/Mods"
+    "Mods"
+    "Public"
+    "Generated/Public"
 )
 
-if [ ${#MOD_SUBDIRS[@]} -eq 0 ]; then
-  echo "MOD_SUBDIRS must contain at least one folder name in $(basename "$0")"
-  exit 1
+if [ "${#MOD_SUBDIR_NAMES[@]}" -eq 0 ]; then
+    echo "MOD_SUBDIR_NAMES must have at least one value in $(basename "$BASH_SOURCE")"
+    exit 1
 fi
 
-# helper: create zip of a directory list using zip or Python fallback
-zip_paths() {
-  local dst_zip="$1"; shift
-  rm -f "$dst_zip"
-  if command -v zip >/dev/null 2>&1; then
-    # zip from repo root: include each source path with the desired archive name
-    zip -r -0 "$dst_zip" "$@" >/dev/null
-  else
-    # Python fallback: expects pairs of (source_dir, archive_prefix) flattened as args
-    python - "$tmpdir" "$zippath" <<'PYCODE'
-import sys, os, zipfile
-src = sys.argv[1]
-dst = sys.argv[2]
-with zipfile.ZipFile(dst, 'w', compression=zipfile.ZIP_STORED) as zf:
-    for root, dirs, files in os.walk(src):
-        for f in files:
-            full = os.path.join(root, f)
-            arc = os.path.relpath(full, src)
-            zf.write(full, arc)
-PYCODE
-  fi
-}
+for MOD_SUBDIR_NAME in "${MOD_SUBDIR_NAMES[@]}"; do
+    echo "Processing: $MOD_SUBDIR_NAME"
 
-ZIP_ROOT="."
+    COPIED=0
+    for subdir in "${SUBDIR_LIST[@]}"; do
+        rm -rf "$subdir/$MOD_SUBDIR_NAME"
+        SRC_ABS_PATH="$BG3_DATA/$subdir/$MOD_SUBDIR_NAME"
+        if [ ! -d "$SRC_ABS_PATH" ]; then
+            continue
+        fi
+        mkdir -p "$subdir"
+        cp -a "$SRC_ABS_PATH" "$subdir"
+        COPIED=1
+    done
 
-for modname in "${MOD_SUBDIRS[@]}"; do
-  found_any=false
-  # collect args for Python fallback (dst + pairs) or zip include list (prefixing will be handled below)
-  # For zip CLI, we'll create temporary symlinked paths under a temp dir to control archive paths.
-  tmpdir="$(mktemp -d)"
-  cleanup() { rm -rf "$tmpdir"; }
-  trap cleanup RETURN
-
-  # For zip CLI path list: we will copy directory trees into tmpdir under subdir-prefixed folders
-  for subdir in "${SUBDIR_LIST[@]}"; do
-    src_dir="$BG3_DATA/$subdir/$modname"
-    if [ ! -d "$src_dir" ]; then
-      continue
+    if [ "$COPIED" -eq 0 ]; then
+        echo "No mod directories found for '$MOD_SUBDIR_NAME' — skipping."
+        continue
     fi
-    found_any=true
-    # create a directory inside tmpdir named like <safe_sub>/<original files...>
-    safe_sub="${subdir//\//_}"
-    dest_under_tmp="$tmpdir/$safe_sub"
-    mkdir -p "$dest_under_tmp"
-    # Copy contents (preserve tree inside safe_sub)
-    cp -a "$src_dir/." "$dest_under_tmp/" || true
-  done
 
-  if [ "$found_any" = false ]; then
-    echo "Warning: mod '$modname' not found in any SUBDIR_LIST locations."
-    continue
-  fi
+    ARCHIVE="${MOD_SUBDIR_NAME}.tar.gz"
+    tar -czf "$ARCHIVE" "${SUBDIR_LIST[@]/%//$MOD_SUBDIR_NAME}" --ignore-failed-read 2>/dev/null || \
+        tar -czf "$ARCHIVE" $(for s in "${SUBDIR_LIST[@]}"; do [ -d "$s/$MOD_SUBDIR_NAME" ] && echo "$s/$MOD_SUBDIR_NAME"; done)
 
-  zipname="${modname}.zip"
-  zippath="$ZIP_ROOT/$zipname"
-
-  echo "Creating root zip $zippath for mod $modname"
-  if command -v zip >/dev/null 2>&1; then
-    (cd "$tmpdir" && zip -r -0 "$zippath" .) >/dev/null
-  else
-    # Use Python fallback: we created a tmpdir with desired archive layout already
-    python - "$tmpdir" "$zippath" <<'PYCODE'
-import sys, os, zipfile
-src = sys.argv[1]
-dst = sys.argv[2]
-with zipfile.ZipFile(dst, 'w', compression=zipfile.ZIP_STORED) as zf:
-    for root, dirs, files in os.walk(src):
-        for f in files:
-            full = os.path.join(root, f)
-            arc = os.path.relpath(full, src)
-            zf.write(full, arc)
-PYCODE
-  fi
-
+    for subdir in "Projects" "Editor" "Mods" "Public" "Generated"; do
+        rm -rf "$subdir"
+    done
 done
 
 git add --all
